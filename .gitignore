@@ -1,0 +1,21 @@
+# Ignore configuration files that may contain sensitive information.
+.DS_Store
+.git
+.vagrant
+*.sql
+node_modules/
+build/
+build/src/
+build/dist/media/
+build/gulpfile.js
+.zip
+build/.gulp/
+upload/
+.idea
+#*.mp4
+#build/
+package-lock.json
+package.json
+pic/created/*
+font/
+upload/
