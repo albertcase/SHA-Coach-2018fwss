@@ -1,0 +1,242 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Coach</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="landscape">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="landscape">
+
+    <!-- <link rel="apple-touch-startup-image" href="/build/assets/img/bg1.png" />
+ -->
+    <!--禁用手机号码链接(for iPhone)-->
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,user-scalable=0,minimum-scale=1.0,maximum-scale=1.0,minimal-ui" />
+    <!--自适应设备宽度-->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <!--控制全屏时顶部状态栏的外，默认白色-->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="Keywords" content="">
+    <meta name="Description" content="...">
+    
+    <link rel="stylesheet" type="text/css" href="/css/bundle.min.css">
+    <script type="text/javascript" src="/js/vendor.min.js"></script>
+    <script type="text/javascript" src="/js/bundle.min.js"></script>
+</head>
+<body>
+
+<div class="loading">
+    <div class="loading_con">
+        <img src="/img/logo.png" width="100%">
+
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+        <p>目前涌入的小伙伴过多<br>页面正在跳转中，请耐心等待。</p>
+    </div>
+</div>
+
+<div class="share-pop hidden"></div>
+
+
+<div id="dreambox">
+    <div class="section show" id="index">
+        <div class="container">
+            <div class="con">
+                <div class="logo">
+                    <img src="/img/logo.png" width="100%">
+                </div>
+                <div class="nav">
+                    <div class="btn choseVolume" data-path="../media/ty-music.mp3">
+                        <a href="javascript:void(0);" >
+                            甜美唐嫣
+                        </a>
+                    </div>
+                    
+                    <div class="btn choseVolume" data-path="../media/zyx-music.mp3">
+                        <a href="javascript:void(0);" >
+                            帅气许魏洲
+                        </a>
+                    </div>
+
+                    <!-- <div class="btn choseVolume" data-path="">
+                        <a href="javascript:void(0);" >
+                            我要自己看
+                        </a>
+                    </div> -->
+                    <p><a href="javascript:void(0)" class="rule">活动细则</a></p>
+                </div>
+            </div>
+            <img src="" sourcesrc="/img/slogan.png" height="100%"/>
+        </div>
+    </div>
+
+    <div class="section" id="showTime">
+        <div class="container">
+            <div class="show-time">
+                <div class="show-time__video">
+                    <div class="poster">
+                        <img src="/img/poster.jpg" width="100%"/>
+                    </div>
+                    <div class="show-time_video__con">
+                        
+                    </div>
+                </div>
+
+                <div class="chat">
+                    <div class="model-pop hidden">
+                        <a href="javascript:void(0);" class="model-pop__close"></a>
+                        <div class="model-pop__con">
+                            <!-- Swiper -->
+                            <div class="swiper-container" id="modelPop">
+                                <div class="swiper-wrapper">
+                                    
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-white"></div>
+                            <div class="swiper-button-prev swiper-button-white"></div>
+                        </div>
+                    </div>
+
+                    <div class="product-pop hidden">
+                        <div class="product-pop__logo">
+                            <img src="/img/pro-pop__logo.png">
+                        </div>
+                        <div class="product-pop__con">
+                            <!-- Swiper -->
+                            <div class="swiper-container" id="productPop">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide" style="background-image:url(img/pro/p1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(img/pro/p1.png)"></div>
+                                    <div class="swiper-slide" style="background-image:url(img/pro/p1.png)"></div>
+                                </div>
+                            </div>
+                            <!-- Add Arrows -->
+                            <div class="swiper-button-next swiper-button-black"></div>
+                            <div class="swiper-button-prev swiper-button-black"></div>
+
+                            <a href="javascript:void(0);" class="btn buyBtn">购 买</a>
+                        </div>
+                        
+                    </div>
+
+                    <div class="chat-head">
+                        <a href="javascript:void(0)" class="icon-volume"></a>
+                        <a href="javascript:void(0)" class="icon-share"></a>
+                    </div>
+                    <div class="chat-room">
+                        <ul id="chatList">
+                            <!--
+                            <li class="own">
+                                <div class="chat-msg__content">
+                                    <span>模特气场强，美美美</span>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="pic"></div>
+                                <div class="chat-msg__content">
+                                    <span>期待我最爱的牌子</span>
+                                </div>
+                            </li> -->
+                        </ul>
+                    </div>
+                    <div class="paopao">
+                        <canvas class="paopaoEle" id="paopaoCanvas0" width="70" height="138">您的浏览器不支持canvas标签~</canvas>
+                        <a href="javascript:void(0);" class="heart">
+                            <span><em>0.1</em>万</span>
+                            <img src="/img/bubble/heart.png" sourcesrc="/img/bubble/heart.png" width="100%">
+                        </a>
+                    </div>
+                    <div class="chat-foot"> 
+                        <div class="msg-btn">发送</div>
+                        <div class="msg-input">
+                            <input type="text" readonly placeholder="点击评论">
+                            <div class="msglist hidden">
+                                <ul>
+                                    <li>
+                                        <span>太幸运了吧，可以和爱豆一起看秀</span>
+                                    </li>
+                                    <li>
+                                        <span>新的一季美翻天</span>
+                                    </li>
+                                    <li>
+                                        <span>模特穿得超有范儿</span>
+                                    </li>
+                                    <li>
+                                        <span>为COACH点赞~</span>
+                                    </li>
+                                    <li>
+                                        <span>好像想去现场看秀!</span>
+                                    </li>
+                                    <li>
+                                        <span>看完就去买买买!</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+</div>
+
+
+<div class="popup transition hidden" id="rule-pop">
+      <span class="close"><img src="" sourcesrc="/img/close.png" width="100%"></span>
+      <div class="p-model">
+        <h2>活动细则</h2>
+        <div class="p-model-con">
+            <h3>参与本活动无需以购买蔻驰产品或服务为前提。购买我们的产品或服务并不会增加你在本次活动中的获胜机会。本次活动最终解释权归蔻驰贸易（上海）有限公司所有。</h3>
+            <ol type="1">
+                <li>参与资格: 任何中国公民均有资格参与微信“直击COACH纽约时装周秀场”活动（以下简称本活动）。本次活动将严格遵守中华人民共和国的相关法律及法规。参与本活动表示你同意无条件完全遵守本活动细则以及活动主办方的相关决定。</li>
+
+                <li>活动主办方: 蔻驰贸易（上海）有限公司<br>
+                    南京西路1717号会德丰广场20楼，200042.</li>
+
+                <li>活动时间: 本活动日期由北京时间2017年9月18日——9月21日，活动主办方的电脑</li>
+
+                <li>怎样参与本次活动: 在活动期间，所有添加蔻驰官方微信账号的用户，根据账号内指引，点击首页三个入口（唐嫣、许魏洲、自己），观看时装周视频及产品展示。活动主办方有义务在活动期间保证活动功能可被正常使用。</li>
+
+                <li>活动信息公告: 在符合法律相关规定的情况下，购买者必须同意活动主办方在媒体上披露本人的姓名，微信头像与信息，语音，意见，身份信息和居住城市，主办方并不需要为此再支付额外费用或另行通知。活动主办方有权依据相关法律法规或业务需要，中止或取消此次活动或者修改活动方案，经相关途径公告后生效。</li>
+
+                <li>一般性条款: 如果发现欺诈，或者技术事故，或者由超出活动主办方能力控制的影响活动公正性的情况发生，活动主办方保留单方面取消或者变更本活动的相关权利。活动主办方保留采取法律手段追诉对于蓄意破坏和攻击活动网站的人的权利并可能要求相关赔偿。</li>
+    
+                <li>豁免条款: 参与本次活动的参赛者不得采用任何直接或者间接的方式沟通或者伤害任何蔻驰贸易（上海）有限公司及其合作伙伴及和本次活动有关的任何相关公司的雇员。</li>
+
+                <li>相关责任: 活动主办方不对以下情况负责：<br>
+                    <ol type="1">
+                       <li>由媒体提供的关于本次活动的任何不准确或者不精确的信息</li> 
+                       <li>任何形式的技术故障，包括软硬件的损坏或者网络问题</li>
+                       <li>对于本次活动的人为的恶意破坏</li>
+                       <li>技术或人为的监管问题</li>
+                       <li>因为参加本次活动直接或间接而产生的人身伤害。</li>
+                       <li>用户对于该金额的支配和使用而产生的相关问题。</li>
+                    </ol>
+                </li>
+            </ol>
+        </div>
+      </div>
+</div>
+
+
+
+
+<!-- 横屏代码 -->
+<div id="orientLayer" class="mod-orient-layer">
+    <div class="mod-orient-layer__content">
+        <i class="icon mod-orient-layer__icon-orient"></i>
+        <div class="mod-orient-layer__desc">为了更好的体验，请解锁横屏浏览<br><em>建议全程在wifi环境下观看</em></div>
+    </div>
+</div>
+
+
+</body>
+</html>
