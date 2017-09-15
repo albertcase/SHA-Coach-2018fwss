@@ -1195,6 +1195,16 @@ ul, li, p, h2 {
   width: 25%;
   padding: 5px 0;
   margin: 0 2%;
+  border: 1px #fff solid;
+  display: inline-block;
+  font-size: 1.4rem;
+  text-align: center;
+  color: #fff; }
+
+.btnSecond {
+  width: 25%;
+  padding: 5px 0;
+  margin: 0 2%;
   background: #000;
   display: inline-block;
   font-size: 1.4rem;
