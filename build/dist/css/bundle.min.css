@@ -842,13 +842,13 @@ ul, li, p, h2 {
     top: 0;
     z-index: 2; }
     .show-time .chat .chat-head {
-      height: 38px;
+      height: 32px;
       background: #2b2b2b;
       position: relative;
       z-index: 6; }
       .show-time .chat .chat-head .icon-volume, .show-time .chat .chat-head .icon-share {
         width: 45px;
-        height: 38px;
+        height: 32px;
         position: relative;
         display: inline-block; }
       .show-time .chat .chat-head .icon-volume {
@@ -1038,7 +1038,7 @@ ul, li, p, h2 {
               left: auto; }
     .show-time .chat .chat-foot {
       width: 100%;
-      height: 38px;
+      height: 36px;
       border: 1px #c2c2c2 solid;
       background: #f0f0f0 url("../img/icon-msg.png") 6% center no-repeat;
       background-size: auto 45%;
@@ -1050,7 +1050,7 @@ ul, li, p, h2 {
         height: 100%;
         font-size: 1.2rem;
         border-left: 1px #c2c2c2 solid;
-        line-height: 38px;
+        line-height: 36px;
         float: right;
         display: inline-block; }
       .show-time .chat .chat-foot .msg-input {
@@ -1218,10 +1218,11 @@ ul, li, p, h2 {
   left: 0;
   top: 0; }
   .product-pop__con .buyBtn {
-    width: 60%;
+    width: 56%;
+    font-size: 1.2rem;
     position: absolute;
     left: 50%;
-    padding: 3px 0;
+    padding: 2px 0;
     bottom: 6%;
     margin: 0 0 0 -30%;
     z-index: 6; }
@@ -1233,7 +1234,7 @@ ul, li, p, h2 {
 .swiper-slide {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: 70% auto; }
+  background-size: 75% auto; }
 
 .product-pop__con .swiper-container {
   width: 100%; }
