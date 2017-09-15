@@ -1059,13 +1059,13 @@ ul, li, p, h2 {
         text-indent: 1rem;
         color: #000;
         position: relative; }
-        .show-time .chat .chat-foot .msg-input input {
+        .show-time .chat .chat-foot .msg-input .msg-input__text {
           width: 80%;
           overflow: hidden;
           text-overflow: ellipsis;
           white-space: nowrap; }
-          .show-time .chat .chat-foot .msg-input input:disabled {
-            color: #333; }
+          .show-time .chat .chat-foot .msg-input .msg-input__text.placeholder {
+            color: #666; }
         .show-time .chat .chat-foot .msg-input .msglist {
           width: 100%;
           background: #ececec;
