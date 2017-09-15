@@ -950,7 +950,7 @@ ul, li, p, h2 {
               position: relative;
               z-index: 2; }
           .show-time .chat .chat-room ul li .chat-msg__content {
-            max-width: 62%;
+            max-width: 60%;
             padding: 10px 8px;
             background: #fff;
             border-radius: 3px;
