@@ -852,6 +852,7 @@ ul, li, p, h2 {
         position: relative;
         display: inline-block; }
       .show-time .chat .chat-head .icon-volume {
+        display: none;
         background: url("../img/icon-volume.png") center no-repeat;
         background-size: auto 56%;
         float: left; }
