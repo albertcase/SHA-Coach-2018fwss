@@ -243,7 +243,6 @@
 
 
 <script type="text/javascript">
-    var dreambox = document.getElementById('dreambox');
     var w, h;
      var init = function(){
         var updateOrientation = function(){
@@ -276,7 +275,8 @@
 
             //html根据不同的旋转状态，加上不同的class，横屏加上landscape，竖屏
             //加上portrait
-            document.body.parentNode.setAttribute('class',orientation);
+            $("#dreambox").attr("class", orientation);
+            // document.body.parentNode.setAttribute('class',orientation);
             
         };
 
