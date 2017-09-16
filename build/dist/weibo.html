@@ -21,10 +21,10 @@
     <meta name="Description" content="...">
     
     <link rel="stylesheet" type="text/css" href="/css/bundle.min.css">
-    <script
+    <!-- <script
   src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
-  crossorigin="anonymous"></script>
+  crossorigin="anonymous"></script> -->
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -42,6 +42,8 @@
 </head>
 <body>
 
+<div id="dreambox">
+
 <div class="loading">
     <div class="loading_con">
         <img src="/img/logo.png" width="100%">
@@ -58,7 +60,9 @@
 <div class="share-pop hidden"></div>
 
 
-<div id="dreambox">
+
+
+
     <div class="section show" id="index">
         <div class="container">
             <div class="con">
@@ -160,7 +164,7 @@
                         </div>
                     </div>
                     <div class="paopao">
-                        <canvas class="paopaoEle" id="paopaoCanvas0" width="60" height="128">您的浏览器不支持canvas标签~</canvas>
+                        <canvas class="paopaoEle weibopaopao" id="paopaoCanvas0" width="60" height="128">您的浏览器不支持canvas标签~</canvas>
                         <a href="javascript:void(0);" class="heart">
                             <span><em>0.1</em>万</span>
                             <img src="/img/bubble/heart.png" sourcesrc="/img/bubble/heart.png" width="100%">
@@ -201,7 +205,6 @@
 
 
 
-</div>
 
 
 <div class="popup transition hidden" id="rule-pop">
@@ -244,7 +247,16 @@
 
 
 
-<script type="text/javascript">
+
+
+</div>
+
+
+
+
+
+
+<!-- <script type="text/javascript">
     var w, h;
      var init = function(){
         var updateOrientation = function(){
@@ -291,6 +303,6 @@
     window.addEventListener('DOMContentLoaded',init,false);
      $(window).on("resize", init)
 </script>
-
+ -->
 </body>
 </html>

@@ -1288,6 +1288,8 @@ ul, li, p, h2 {
   bottom: 3%;
   margin: 0 0 0 -30px;
   z-index: 4; }
+  .paopaoEle.weibopaopao {
+    z-index: -1; }
 
 .heart {
   width: 86%;
