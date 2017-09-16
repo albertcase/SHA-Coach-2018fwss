@@ -258,7 +258,7 @@
                         width: "100%",
                         height: "100%",
                         "-webkit-transform": "none"
-                    })
+                    }).attr("class", 'landscape');
                     orientation = 'landscape'; //这里是横屏
                     break;
                 default:
@@ -268,14 +268,13 @@
                         "-webkit-transform-origin": "0px 0px",
                         "-webkit-transform": "rotate(90deg) translate3d(0px, -" + w + "px, 0px)",
                         transform: "rotate(90deg) translate3d(0px, -" + w + "px, 0px)"
-                    }),
+                    }).attr("class", 'portrait'),
                     orientation = 'portrait';  //这里是竖屏
                     break;
             }
 
             //html根据不同的旋转状态，加上不同的class，横屏加上landscape，竖屏
             //加上portrait
-            $("#dreambox").attr("class", orientation);
             // document.body.parentNode.setAttribute('class',orientation);
             
         };
