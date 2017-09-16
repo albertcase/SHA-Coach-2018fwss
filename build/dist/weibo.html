@@ -21,7 +21,10 @@
     <meta name="Description" content="...">
     
     <link rel="stylesheet" type="text/css" href="/css/bundle.min.css">
-
+    <script
+  src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+  integrity="sha256-k2WSCIexGzOj3Euiig+TlR8gA0EmPjuc79OEeY5L45g="
+  crossorigin="anonymous"></script>
     <script>
         var _hmt = _hmt || [];
         (function() {
@@ -239,15 +242,54 @@
 
 
 
+<script type="text/javascript">
+    var dreambox = document.getElementById('dreambox');
+    var w, h;
+     var init = function(){
+        var updateOrientation = function(){
+            var orientation = window.orientation;
 
-<!-- 横屏代码 -->
-<div id="orientLayer" class="mod-orient-layer">
-    <div class="mod-orient-layer__content">
-        <i class="icon mod-orient-layer__icon-orient"></i>
-        <div class="mod-orient-layer__desc">为了更好的体验，请解锁横屏浏览<br><em>建议全程在wifi环境下观看</em></div>
-    </div>
-</div>
+            w = document.documentElement.clientWidth,
+            h = document.documentElement.clientHeight;
+           
+            switch(orientation){
+                case 90:
+                case -90:
+                    $("#dreambox").css({
+                        width: "100%",
+                        height: "100%",
+                        "-webkit-transform": "none"
+                    })
+                    orientation = 'landscape'; //这里是横屏
+                    break;
+                default:
+                    $("#dreambox").css({
+                        width: h,
+                        height: w,
+                        "-webkit-transform-origin": "0px 0px",
+                        "-webkit-transform": "rotate(90deg) translate3d(0px, -" + w + "px, 0px)",
+                        transform: "rotate(90deg) translate3d(0px, -" + w + "px, 0px)"
+                    }),
+                    orientation = 'portrait';  //这里是竖屏
+                    break;
+            }
 
+            //html根据不同的旋转状态，加上不同的class，横屏加上landscape，竖屏
+            //加上portrait
+            document.body.parentNode.setAttribute('class',orientation);
+            
+        };
+
+        // 每次旋转，调用这个事件。
+        window.addEventListener('orientationchange',updateOrientation,false);
+
+        // 事件的初始化
+        updateOrientation();
+    };
+
+    window.addEventListener('DOMContentLoaded',init,false);
+     $(window).on("resize", init)
+</script>
 
 </body>
 </html>
