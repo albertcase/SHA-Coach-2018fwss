@@ -1289,7 +1289,9 @@ ul, li, p, h2 {
   left: 50%;
   margin: 0 0 0 -43%;
   bottom: 0;
-  z-index: 5; }
+  z-index: 5;
+  -webkit-user-select: none;
+  -moz-user-select: none; }
 
 .heart img {
   opacity: 0;
