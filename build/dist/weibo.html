@@ -141,21 +141,23 @@
                         <a href="javascript:void(0)" class="icon-volume"></a>
                         <a href="javascript:void(0)" class="icon-share"></a>
                     </div>
-                    <div class="chat-room">
-                        <ul id="chatList">
-                            <!--
-                            <li class="own">
-                                <div class="chat-msg__content">
-                                    <span>模特气场强，美美美</span>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="pic"></div>
-                                <div class="chat-msg__content">
-                                    <span>期待我最爱的牌子</span>
-                                </div>
-                            </li> -->
-                        </ul>
+                    <div class="chatAdd">
+                        <div class="chat-room">
+                            <ul id="chatList">
+                                <!--
+                                <li class="own">
+                                    <div class="chat-msg__content">
+                                        <span>模特气场强，美美美</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="pic"></div>
+                                    <div class="chat-msg__content">
+                                        <span>期待我最爱的牌子</span>
+                                    </div>
+                                </li> -->
+                            </ul>
+                        </div>
                     </div>
                     <div class="paopao">
                         <canvas class="paopaoEle" id="paopaoCanvas0" width="60" height="128">您的浏览器不支持canvas标签~</canvas>
@@ -258,7 +260,7 @@
                         width: "100%",
                         height: "100%",
                         "-webkit-transform": "none"
-                    }).attr("class", 'landscape');
+                    });
                     orientation = 'landscape'; //这里是横屏
                     break;
                 default:
@@ -268,14 +270,14 @@
                         "-webkit-transform-origin": "0px 0px",
                         "-webkit-transform": "rotate(90deg) translate3d(0px, -" + w + "px, 0px)",
                         transform: "rotate(90deg) translate3d(0px, -" + w + "px, 0px)"
-                    }).attr("class", 'portrait'),
+                    }),
                     orientation = 'portrait';  //这里是竖屏
                     break;
             }
 
             //html根据不同的旋转状态，加上不同的class，横屏加上landscape，竖屏
             //加上portrait
-            // document.body.parentNode.setAttribute('class',orientation);
+            document.body.parentNode.setAttribute('class',orientation);
             
         };
 
